@@ -7,8 +7,7 @@ liberado = False
 while liberado == False:
     ano = int(input('Digite o ano (coloque 0 para analisar o ano atual): '))
     if ano == 0:
-        ano_atual = datetime.now() #Atribuo a data local completa na variável ano_atual
-        ano = ano_atual.year #Acesso precisamente o ano através da variável ano_atual e atribuo ao ano
+        ano = datetime.now().year #Atribuo a o ano local à variável
         liberado = True
     if ano < 0:
         print('Ano inválido! Tente novamente!')
