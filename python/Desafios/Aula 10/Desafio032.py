@@ -5,7 +5,7 @@ from datetime import datetime
 #Entrada de dados via teclado com o tipo inteiro e validada
 liberado = False
 while liberado == False:
-    ano = int(input('Digite o ano (coloque 0 para analisar ano atual): '))
+    ano = int(input('Digite o ano (coloque 0 para analisar o ano atual): '))
     if ano == 0:
         ano_atual = datetime.now() #Atribuo a data local completa na variável ano_atual
         ano = ano_atual.year #Acesso precisamente o ano através da variável ano_atual e atribuo ao ano
