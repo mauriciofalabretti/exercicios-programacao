@@ -4,8 +4,8 @@ def validar_numero(mensagem):
     while True:
         try:
             return int(input(mensagem))
-        except ValueError:
-            print('Valor inserido não é do tipo inteiro!')
+        except ValueError as e:
+            print(f'Valor inserido não é do tipo inteiro!\n{e}')
 
 n1 = validar_numero('Digite o primeiro número: ')
 n2 = validar_numero('Digite o segundo número: ')
