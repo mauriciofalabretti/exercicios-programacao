@@ -10,7 +10,7 @@ while liberado == False:
         ano = datetime.now().year #Atribuo a o ano local à variável
         liberado = True
     if ano < 0:
-        print('Ano inválido! Tente novamente!')
+        print(f'{'\033[4;31m'}Ano inválido!{'\033[m'} Tente novamente!')
     else:
         liberado = True
 
@@ -21,4 +21,4 @@ while liberado == False:
 #    print(f'O ano {ano} não é bissexto.')
 
 #Usando o módulo calendar
-print(f'{ano} é bissexto' if isleap(ano) == True else f'{ano} não é bissexto.')
+print(f'{ano} {'\033[0;34m'}é bissexto{'\033[m'}' if isleap(ano) == True else f'{ano} {'\033[0;31m'}não é bissexto{'\033[m'}.')
