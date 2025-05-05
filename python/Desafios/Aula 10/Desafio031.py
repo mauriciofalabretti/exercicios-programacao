@@ -1,9 +1,9 @@
 #Entrada e validação de dados pelo teclado com o tipo float
 liberado = False
 while liberado == False:
-    distancia = float(input('Informe a distância da viagem em Km: '))
+    distancia = float(input(f'Informe a distância da viagem em {'\033[1;95m'}Km{'\033[m'}: '))
     if distancia <= 0:
-        print('Distância não pode ser igual ou menor a zero!')
+        print(f'Distância {'\033[1;91m'}não pode ser igual ou menor a zero!{'\033[m'}')
     else:
         liberado = True
 
@@ -14,4 +14,4 @@ if distancia <= 200:
 else:
     preco_passagem = distancia * 0.45
 
-print(f'Você irá pagar R$ {preco_passagem:.2f} pela passagem')
+print(f'Você irá pagar {'\033[7;36;107m'}R$ {preco_passagem:.2f}{'\033[m'} pela passagem')
