@@ -5,7 +5,7 @@ def validar_numero(mensagem):
         try:
             return int(input(mensagem))
         except ValueError as e:
-            print(f'Valor inserido não é do tipo inteiro!\n{e}')
+            print(f'{'\033[2;91m'}Valor inserido não é do tipo inteiro!{'\033[m'}\n{e}')
 
 n1 = validar_numero('Digite o primeiro número: ')
 n2 = validar_numero('Digite o segundo número: ')
@@ -38,8 +38,8 @@ maior = max(n1, n2, n3)
 menor = min(n1, n2, n3)
 
 if n1 == n2 == n3:
-    print('Os números são iguais!')
+    print(f'{'\033[1;93m'}Os números são iguais!{'\033[m'}')
 else:
-    print(f'O maior número é {maior}')
-    print(f'O menor número é {menor}')
+    print(f'O {'\033[1;94m'}maior{'\033[m'} número é {'\033[7;95;107m'}{maior}{'\033[m'}')
+    print(f'O {'\033[1;91m'}menor{'\033[m'} número é {'\033[7;97;45m'}{menor}{'\033[m'}')
 
