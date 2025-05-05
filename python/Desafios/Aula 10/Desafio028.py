@@ -19,7 +19,7 @@ sleep(1)
 
 #Condicional personaliza saída para o usuário de acordo com seu palpite
 if palpite == numero:
-    print('Parabéns! Você acertou!')
+    print(f'{'\033[7;92m'}Parabéns! Você acertou!{'\033[m'}')
 else:
-    print(f'Que pena! Você errou...\n'
-          f'O número sorteado foi {numero}.')
+    print(f'{'\033[1;91m'}Que pena! Você errou...{'\033[m'}\n'
+          f'O número sorteado foi {'\033[1;94m'}{numero}{'\033[m'}.')
