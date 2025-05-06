@@ -23,6 +23,7 @@ def valida_valores(mensagem):
 #Entrada de dados
 valor_casa = valida_valores('Valor do imóvel: R$ ')
 salario = valida_valores('Digite o salário: R$ ')
+quantos_anos = 0
 
 ##Validação da entrada de anos com tratamento de erros
 liberado = False
