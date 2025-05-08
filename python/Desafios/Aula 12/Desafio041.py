@@ -28,7 +28,7 @@ elif idade <= 14:
     print(f'Você possui: \033[0;93m{idade} anos\033[m. | \033[0;96mCategoria: INFANTIL\033[m')
 elif idade <= 19:
     print(f'Você possui: \033[0;93m{idade} anos\033[m. | \033[0;96mCategoria: JUNIOR\033[m')
-elif idade <= 20:
+elif idade <= 25:
     print(f'Você possui: \033[0;93m{idade} anos\033[m. | \033[0;96mCategoria: SÊNIOR\033[m')
 else:
     print(f'Você possui: \033[0;93m{idade} anos\033[m. | \033[0;96mCategoria: MASTER\033[m')
