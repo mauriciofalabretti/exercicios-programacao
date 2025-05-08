@@ -27,8 +27,8 @@ while liberado == False:
 #Conversão ocorre de acordo com a opção escolhida
 match conversao:
     case 1:
-        print(f'O número \033[0;93m{num}\033[m em binário é: \033[0;96m{bin(num)}\033[m')
+        print(f'O número \033[0;93m{num}\033[m em binário é: \033[0;96m{bin(num)[2:]}\033[m')
     case 2:
-        print(f'O número \033[0;93m{num}\033[m em octal é: \033[0;96m{oct(num)}\033[m')
+        print(f'O número \033[0;93m{num}\033[m em octal é: \033[0;96m{oct(num)[2:]}\033[m')
     case 3:
-        print(f'O número \033[0;93m{num}\033[m em hexadecimal é: \033[0;96m{hex(num)}\033[m')
+        print(f'O número \033[0;93m{num}\033[m em hexadecimal é: \033[0;96m{hex(num)[2:]}\033[m')
