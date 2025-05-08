@@ -22,13 +22,14 @@ l3 = valida_entrada('Digite o terceiro lado: ')
 #Verifica se os lados formam um triângulo
 if l1 + l2 > l3 and l1 + l3 > l2 and l2 + l3 > l1:
     print(f'As medidas informadas \033[0;92mformam um triângulo!\033[m')
+
+    # Verifica o tipo dos triângulos (Equilátero, Isósceles ou Escaleno)
+    if l1 == l2 == l3:
+        print(f'O triângulo é \033[0;34mEQUILÁTERO\033[m')
+    elif l1 != l2 and l1 != l3 and l2 != l3:
+        print(f'O triângulo é \033[0;34mESCALENO\033[m')
+    else:
+        print(f'O triângulo é \033[0;34mISÓSCELES\033[m')
 else:
     print(f'As medidas informadas \033[0;31mnão formam um triângulo!\033[m')
 
-#Verifica o tipo dos triângulos (Equilátero, Isósceles ou Escaleno)
-if l1 == l2 == l3:
-    print(f'O triângulo é \033[0;34mEQUILÁTERO\033[m')
-elif l1 != l2 and l1 != l3 and l2 != l3:
-    print(f'O triângulo é \033[0;34mESCALENO\033[m')
-else:
-    print(f'O triângulo é \033[0;34mISÓSCELES\033[m')
