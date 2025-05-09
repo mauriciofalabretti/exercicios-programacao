@@ -27,12 +27,11 @@ print(f'IMC: \033[0;33m{imc:.1f}\033[m', end='')
 #Verifica o enquadramento do IMC
 if imc < 18.5:
     print(f' | Status: \033[0;34mAbaixo do Peso\033[m')
-elif imc >= 18.5 and imc < 25:
+elif imc < 25:
     print(f' | Status: \033[0;34mPeso Ideal\033[m')
-elif imc >= 25 and imc < 30:
+elif imc < 30:
     print(f' | Status: \033[0;34mSobrepeso\033[m')
-elif imc >= 30 and imc < 40:
+elif imc < 40:
     print(f' | Status: \033[0;34mObesidade\033[m')
 else:
     print(f' | Status: \033[0;34mObesidade Mórbida\033[m')
-
